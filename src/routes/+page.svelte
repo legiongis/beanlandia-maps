@@ -99,26 +99,12 @@
 
 
     const layerLookup = {
-        sanborn1893: {
-            name: "Sanborn 1893",
-            visible: false,
+        sanborn1950: {
+            name: "Sanborn 1950",
+            visible: true,
             opacity: 100,
-            layer: lyr1893,
-            locLink: "https://www.loc.gov/resource/g4014nm.g03376189304/?sp=65&st=image",
-        },
-        sanborn1896: {
-            name: "Sanborn 1896",
-            visible: false,
-            opacity: 100,
-            layer: lyr1896,
-            locLink: "https://www.loc.gov/resource/g4014nm.g03376189604/?sp=26&st=image",
-        },
-        sanborn1908: {
-            name: "Sanborn 1908",
-            visible: false,
-            opacity: 100,
-            layer: lyr1908,
-            locLink: "https://www.loc.gov/resource/g4014nm.g03376190801/?sp=31&st=image",
+            layer: lyr1950,
+            locLink: "https://www.loc.gov/resource/g4014nm.g03376195009/?sp=9&st=image",
         },
         sanborn1937: {
             name: "Sanborn 1937",
@@ -127,12 +113,26 @@
             layer: lyr1937,
             locLink: "https://www.loc.gov/resource/g4014nm.g03376193709/?sp=9&st=image",
         },
-        sanborn1950: {
-            name: "Sanborn 1950",
-            visible: true,
+        sanborn1908: {
+            name: "Sanborn 1908",
+            visible: false,
             opacity: 100,
-            layer: lyr1950,
-            locLink: "https://www.loc.gov/resource/g4014nm.g03376195009/?sp=9&st=image",
+            layer: lyr1908,
+            locLink: "https://www.loc.gov/resource/g4014nm.g03376190801/?sp=31&st=image",
+        },
+        sanborn1896: {
+            name: "Sanborn 1896",
+            visible: false,
+            opacity: 100,
+            layer: lyr1896,
+            locLink: "https://www.loc.gov/resource/g4014nm.g03376189604/?sp=26&st=image",
+        },
+        sanborn1893: {
+            name: "Sanborn 1893",
+            visible: false,
+            opacity: 100,
+            layer: lyr1893,
+            locLink: "https://www.loc.gov/resource/g4014nm.g03376189304/?sp=65&st=image",
         },
     }
 
