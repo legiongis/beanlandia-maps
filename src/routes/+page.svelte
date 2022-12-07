@@ -4,37 +4,19 @@
 
     import { browser } from '$app/environment';
 
-
     // import filter1893 from '$lib/filters/1893.geojson';
     // import filter1908 from '$lib/filters/1908.geojson';
 
     import Map from 'ol/Map';
     import View from 'ol/View';
 
-    import VectorSource from 'ol/source/Vector';
     import GeoTIFF from 'ol/source/GeoTIFF';
-    import ImageStatic from 'ol/source/ImageStatic';
     import OSM from 'ol/source/OSM';
     import XYZ from 'ol/source/XYZ';
-    import TileWMS from 'ol/source/TileWMS';
-    import GeoJSON from 'ol/format/GeoJSON';
-
-    import Feature from 'ol/Feature';
-    import Polygon from 'ol/geom/Polygon';
-    import Point from 'ol/geom/Point';
-
-    import Style from 'ol/style/Style';
-    import Fill from 'ol/style/Fill';
-    import Stroke from 'ol/style/Stroke';
-    import RegularShape from 'ol/style/RegularShape';
 
     import TileLayer from 'ol/layer/Tile';
     import {WebGLTile as WebGLTileLayer} from 'ol/layer';
-    import VectorLayer from 'ol/layer/Vector';
     import LayerGroup from 'ol/layer/Group';
-
-    import {fromLonLat} from 'ol/proj';
-    import { none } from 'ol/centerconstraint';
 
     import Crop from 'ol-ext/filter/Crop';
 
@@ -50,8 +32,8 @@
         source: new OSM(),
     })
 
-    let pi = "beantime";
-    $: showPm = pi == "beantime" ? false : true;
+    let pi;
+    $: showPm = pi == "beans" ? false : true;
 
     let showAboutPanel = false;
     let showLayerPanel = false;
