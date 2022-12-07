@@ -1,0 +1,22 @@
+{
+	"name": "beanlandia-maps",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"svelte": "^3.53.1",
+		"vite": "^3.2.4"
+	},
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.48",
+		"ol": "^7.1.0",
+		"ol-ext": "^4.0.4"
+	}
+}
