@@ -36,7 +36,7 @@
     $: showPm = pi == "beans" ? false : true;
 
     let showAboutPanel = false;
-    let showLayerPanel = false;
+    let showLayerPanel = true;
     let layerBtnLabel;
     $: showLayerPanel ? layerBtnLabel = "×" : layerBtnLabel = "•••"
 
@@ -101,7 +101,7 @@
     const layerLookup = {
         sanborn1893: {
             name: "Sanborn 1893",
-            visible: true,
+            visible: false,
             opacity: 100,
             layer: lyr1893,
             locLink: "https://www.loc.gov/resource/g4014nm.g03376189304/?sp=65&st=image",
@@ -129,7 +129,7 @@
         },
         sanborn1950: {
             name: "Sanborn 1950",
-            visible: false,
+            visible: true,
             opacity: 100,
             layer: lyr1950,
             locLink: "https://www.loc.gov/resource/g4014nm.g03376195009/?sp=9&st=image",
