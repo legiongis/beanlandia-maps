@@ -2,6 +2,8 @@
     import {onMount} from 'svelte';
     import 'ol/ol.css';
 
+    import { env } from '$env/dynamic/public';
+
     import { browser } from '$app/environment';
 
     // import filter1893 from '$lib/filters/1893.geojson';
@@ -18,9 +20,7 @@
     import {WebGLTile as WebGLTileLayer} from 'ol/layer';
     import LayerGroup from 'ol/layer/Group';
 
-    import Crop from 'ol-ext/filter/Crop';
-
-    const mbk = 'pk.eyJ1IjoibGVnaW9uZ2lzIiwiYSI6ImNsYmNvazRvdTB2YWQzdm50YzRmcG5wYjAifQ.eOGJmZJHrXLo46_yTdftqQ'
+    const mbk = env.PUBLIC_MAPBOX_TOKEN
     const mbSatellite = new TileLayer({
         source: new XYZ({
             url: 'https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/tiles/{z}/{x}/{y}?access_token='+mbk,
@@ -32,8 +32,8 @@
         source: new OSM(),
     })
 
-    let pi;
-    $: showPm = pi == "beans" ? false : true;
+    let pi = '';
+    $: showPm = pi == env.PUBLIC_PASSWORD ? false : true;
 
     let showAboutPanel = false;
     let showLayerPanel = true;
